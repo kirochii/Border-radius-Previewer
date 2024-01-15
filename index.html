@@ -1,0 +1,58 @@
+<!--Author: Kirochii-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Border-radius Previewer</h1>
+
+<div class="container">
+    <div class="top-left">A</div>
+    <div class="top-right">B</div>
+</div>
+
+
+
+<div id="box">
+</div>
+
+<div class="container">
+    <div class="bottom-right">C</div>
+    <div class="bottom-left">D</div>
+</div>
+
+<br><br>
+
+A: <input oninput="preview()" id="A" type="number" min="0" value="0">&emsp;&emsp;
+B: <input oninput="preview()" id="B" type="number" min="0" value="0"><br><br>
+D: <input oninput="preview()" id="D" type="number" min="0" value="0">&emsp;&emsp;
+C: <input oninput="preview()" id="C" type="number" min="0" value="0"><br><br>
+
+Unit: 
+<select id="unit">
+    <option value="cm">cm</option>
+    <option value="mm">mm</option>
+    <option value="in">in</option>
+    <option value="px" selected>px</option>
+    <option value="pt">pt</option>
+    <option value="pc">pc</option>
+    <option value="em">em</option>
+    <option value="ex">ex</option>
+    <option value="ch">ch</option>
+    <option value="rem">rem</option>
+    <option value="vw">vw</option>
+    <option value="vh">vh</option>
+    <option value="vmin">vmin</option>
+    <option value="vmax">vmax</option>
+    <option value="%">%</option>
+</select>
+<br><br>
+
+<button onclick="copy()">Copy to Clipboard</button>
+
+<script src="main.js"></script>
+</body>
+</html>
